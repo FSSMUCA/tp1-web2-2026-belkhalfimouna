@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 5</h1>
+    <h1>Ma fiche de présentation</h1>
+    <p id="nomComplet"></p>
+    <p id="age"></p>
+    <p id="ville"></p>
+    <p id="pre"></p>
+
+    <script>
+      let prenom = prompt("entrer votre prenom");
+      let nom = prompt("entrer votre nom :");
+      let age = prompt("entrer votre age :");
+      let ville = prompt("entrer votre VILLE :");
+      document.getElementById("nomComplet").innerHTML =
+        " Nom complet " + prenom + " " + nom;
+      document.getElementById("age").innerHTML = " age " + age + " ans";
+      document.getElementById("ville").innerHTML = " ville " + ville + ".";
+      document.getElementById("pre").innerHTML =
+        " je m appelle " + prenom + "" + nom + " j habite a " + ville + ".";
+      document.title = "Fiche de " + prenom;
+    </script>
+  </body>
+</html>
