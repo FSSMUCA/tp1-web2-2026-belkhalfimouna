@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP JavaScript</title>
+</head>
+<body>
+    <h1>Exercice 4</h1>
+    <script>
+
+        let prenom=window.prompt("Quel est votre prénom ?");
+        let age=window.prompt("Quel est votre âge ?");
+        age=Number(age);
+        let anneeNaissance=2026-age;
+        window.alert(`Bonjour ${prenom} ! Vous êtes né(e) vers ${anneeNaissance}.`);
+        let afficher=window.confirm("afficher dans la console");
+        if(afficher==true){
+ window.alert(`${prenom} ! vous avez ${age} ans Vous êtes né(e) vers ${anneeNaissance}.`)
+            
+        }
+        else{
+           window.prompt(null);
+        }
+        
+    </script>
+</body>
+</html>
